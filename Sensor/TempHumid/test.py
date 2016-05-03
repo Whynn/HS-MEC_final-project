@@ -3,7 +3,7 @@
 Read and send AM2302 humidity/temperature to earthdata
 '''
 
-import requests
+import home/pi/node_modules/requests
 import datetime
 import time
 import am2302_lib
@@ -53,10 +53,10 @@ while True:
 #            if r.status_code != 200:
 #                print('login error: ', r.status_code, ' text: ', r.text)
 #                exit(1)
-        else:
+#        else:
 #            print('un-recoverable error: ', r.status_code, ' text: ', r.text)
-	     print('un-recoverable error')
-            exit(1)
+#	     print('un-recoverable error')
+#            exit(1)
         time.sleep(1.0)
 #        GPIO.output(LED, GPIO.LOW)
     else:
